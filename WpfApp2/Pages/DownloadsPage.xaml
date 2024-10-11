@@ -1,0 +1,71 @@
+﻿<Page x:Class="WpfApp2.Pages.DownloadsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:hc="https://handyorg.github.io/handycontrol"
+      xmlns:local="clr-namespace:WpfApp2.Pages"
+      mc:Ignorable="d"
+      Title="DownloadsPage" Height="440" Width="800">
+    <Grid>
+        <Grid Margin="10,5,10,30">
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock FontWeight="UltraBlack" Text="课表类" FontSize="20"></TextBlock>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="Classisland"></TextBlock>
+                        <TextBlock FontWeight="Medium" Text="一款适用于班级一体机的课程信息显示软件，支持显示当日课表、课程信息与各组件信息，具有丰富的插件系统，支持各种精细化设置。"></TextBlock>
+                        <CheckBox x:Name="Classisland" Content="确认下载"/>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="ElectronClassSchedule"></TextBlock>
+                        <TextBlock FontWeight="Medium" Text="一款电子课程表软件。"></TextBlock>
+                        <CheckBox x:Name="Ecs" Content="还没做呢" IsEnabled="False"/>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="Class-Widgets"></TextBlock>
+                        <TextBlock FontWeight="Medium" Text="一款全新课表软件。"></TextBlock>
+                        <CheckBox x:Name="Cw" Content="还没做呢" IsEnabled="False"/>
+                    </StackPanel>
+                </Border>
+                <TextBlock FontWeight="UltraBlack" Text="画板类" FontSize="20"></TextBlock>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="Ink-Canvas"></TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" FontWeight="Medium" Text="Ink Canvas 画板是一款轻量级画板软件，基于WPF/C#，其针对希沃一体机进行了特别优化，与预装的“希沃白板 5”软件相比，启动速度大幅度提升（提升5-10 倍），系统资源占用更小，使用体验更佳。"></TextBlock>
+                        <CheckBox x:Name="Ic" Content="还没做呢" IsEnabled="False"/>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="Ink-Canvas-Artistry"></TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" FontWeight="Medium" Text="基于Ink Canvas二次开发，优化了界面UI，是一款好用的屏幕批注/板书/PPT批注工具。"></TextBlock>
+                        <CheckBox x:Name="Ica" Content="还没做呢" IsEnabled="False"/>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="InkCanvasForClass"></TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow" FontWeight="Medium" Text="InkCanvasForClass 是基于ChangSakura的 Ink Canvas Artistry项目二次开发而来。该项目着重于优化原项目的 UI 设计，使其更便于课堂使用，同时也在积极开发新功能，修理原项目的不合理之处。"></TextBlock>
+                        <CheckBox x:Name="Icc" Content="还没做呢" IsEnabled="False"/>
+                    </StackPanel>
+                </Border>
+                <TextBlock FontWeight="UltraBlack" Text="桌面小工具和看板类" FontSize="20"></TextBlock>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="ZongziTek黑板贴"></TextBlock>
+                        <TextBlock FontWeight="Medium" Text="ZongziTek黑板贴是一个方便的希沃小工具，使用WinUI3样式"></TextBlock>
+                        <CheckBox x:Name="ZongziTekSticker" Content="确认下载"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+            <Button Margin="0,0,0,30" VerticalAlignment="Bottom" HorizontalAlignment="Center" hc:BorderElement.CornerRadius="15" Style="{StaticResource ButtonPrimary}" Width="200" Content="开始下载" Click="ButtonBase_OnClick"/>
+    </Grid>
+    </Grid>
+</Page>

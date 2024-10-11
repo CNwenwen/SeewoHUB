@@ -1,0 +1,27 @@
+﻿<hc:Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="Seewo Hub 1.0" Height="470" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="下载">
+                <Frame Source="Pages/DownloadsPage.xaml"/>
+            </TabItem>
+            <TabItem Header="扩展功能">
+                <Frame Source="Pages/Kuozhan.xaml"/>
+            </TabItem>
+            <TabItem Header="设置">
+                <Frame Source="Pages/SettingsPage.xaml"></Frame>
+            </TabItem>
+        </TabControl>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">
+            <StackPanel hc:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
+        </ScrollViewer>
+    </Grid>
+</hc:Window>
