@@ -4,12 +4,6 @@
 
 # SeewoHUB
 
-[![Watchers](https://img.shields.io/github/watchers/CNwenwen/SeewoHUB?style=social)](https://github.com//CNwenwen/SeewoHUB/watchers)
-[![Downloads](https://img.shields.io/github/downloads//CNwenwen/SeewoHUB/total?style=social&label=Downloads&logo=github)](https://github.com//CNwenwen/SeewoHUB/releases/latest)
-[![GitHub Issues](https://img.shields.io/github/issues-search//CNwenwen/SeewoHUB?query=is%3Aopen&style=social-square&logo=github&label=Issues&color=%233fb950)](https://github.com//CNwenwen/SeewoHUB/issues)
-[![Beta](https://img.shields.io/github/v/release//CNwenwen/SeewoHUB?include_prereleases&style=social-square&label=测试版)](https://github.com/CNwenwen/SeewoHUB/releases/)
-[![Github Last Commit](https://img.shields.io/github/last-commit//CNwenwen/SeewoHUB)](https://github.com//CNwenwen/SeewoHUB/commits/master)
-
 一款方便、快捷的下载各类软件的软件
 
 | 下载 [Releases](https://github.com//CNwenwen/SeewoHUB/releases) |
