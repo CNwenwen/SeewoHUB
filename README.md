@@ -15,7 +15,7 @@
 [![Release](https://img.shields.io/github/v/release/CNwenwen/SeewoHUB?style=flat&color=%233fb950&label=正式版)](https://github.com/CNwenwen/SeewoHUB/releases/latest) 
 [![Created At](https://img.shields.io/github/created-at/CNwenwen/SeewoHUB)](https://github.com/CNwenwen/SeewoHUB)
 [![Github Last Commit](https://img.shields.io/github/last-commit/CNwenwen/SeewoHUB)](https://github.com/CNwenwen/SeewoHUB/commits/master)
-![Update Status](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E9%9D%9E%E5%B8%B8%E6%B4%BB%E8%B7%83-green)
+![Update Status](https://img.shields.io/badge/不咋活跃-yellow)
 [![GitHub Language Count](https://img.shields.io/github/languages/count/CNwenwen/SeewoHUB)](https://github.com/CNwenwen/SeewoHUB)
 [![GitHub Top Language](https://img.shields.io/github/languages/top/CNwenwen/SeewoHUB)](https://github.com/CNwenwen/SeewoHUB)
 
