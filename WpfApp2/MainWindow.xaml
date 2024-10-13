@@ -19,6 +19,9 @@
             <TabItem Header="设置">
                 <Frame Source="Pages/SettingsPage.xaml"></Frame>
             </TabItem>
+            <TabItem Header="Github存储库">
+                <Frame Source="Pages/Update.xaml"></Frame>
+            </TabItem>
         </TabControl>
         <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">
             <StackPanel hc:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>

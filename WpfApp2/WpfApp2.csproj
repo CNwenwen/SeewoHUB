@@ -8,10 +8,13 @@
         <UseWPF>true</UseWPF>
         <DebugType>embedded</DebugType>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <ApplicationIcon>icon2.ico</ApplicationIcon>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="HandyControl" Version="3.5.1" />
+      <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2792.45" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
       <PackageReference Include="StarLight_Core" Version="2.0.2-preview6" />
     </ItemGroup>
 

@@ -14,7 +14,7 @@
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="下载线程数"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="设置线程数量。一般来说，线程越多，速度越快。但不推荐设置为128个以上，可能会导致严重卡顿。"></TextBlock>
-                        <Slider ValueChanged="ProcessSlider_OnValueChanged" x:Name="ProcessSlider" Value="16" Maximum="32" Minimum="1"></Slider>
+                        <Slider  IsEnabled="False" ValueChanged="ProcessSlider_OnValueChanged" x:Name="ProcessSlider" Value="16" Maximum="32" Minimum="1"></Slider>
                         <TextBlock x:Name="PreviewSliderTextBlock" FontWeight="Light"></TextBlock>
                     </StackPanel>
                 </Border>
@@ -22,7 +22,14 @@
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="下载源"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="选定一个下载镜像源，防止下载失败。"></TextBlock>
-                        <ComboBox></ComboBox>
+                        <ComboBox  IsEnabled="False"/>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="下载地址"></TextBlock>
+                        <TextBlock FontWeight="Medium" Text="选定一个下载地址。默认为当前程序运行地址。例如：D:\Download。"></TextBlock>
+                        <TextBox TextChanged="DizhiTextBox_OnTextChanged" x:Name="DizhiTextBox"/>
                     </StackPanel>
                 </Border>
                 <TextBlock FontWeight="UltraBlack" Text="投稿与侵权处理" FontSize="20"></TextBlock>

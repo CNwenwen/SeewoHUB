@@ -4,13 +4,46 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfApp2.Pages"
+      xmlns:hc="https://handyorg.github.io/handycontrol"
       mc:Ignorable="d"
       Title="Kuozhan" Height="450" Width="800">
     <Grid Margin="10,5,10,30">
         <ScrollViewer>
             <StackPanel>
                 <TextBlock FontWeight="UltraBlack" Text="官方扩展" FontSize="20"></TextBlock>
-                <TextBlock FontWeight="Bold" Text="Coming S∞n" FontSize="20"></TextBlock>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="应用小工具"></TextBlock>
+                        <Border Style="{StaticResource BorderRegion}">
+                            <StackPanel>
+                                <TextBlock FontWeight="ExtraBlack" Text="下载"></TextBlock>
+                                <TextBlock FontWeight="Medium" Text="得益于StarLight.Core的多线程下载器，可以下载任意资源。请注意，由于网站原因，部分网站可能报错403提示。"></TextBlock>
+                                <TextBox Style="{StaticResource TextBoxExtend}" hc:InfoElement.Placeholder="下载地址" x:Name="UrlTextBox" Width="630"/>
+                                <TextBox Style="{StaticResource TextBoxExtend}" hc:InfoElement.Placeholder="文件名" x:Name="ExtraTextBox" Width="630"/>
+                                <Button x:Name="DownloadButton" Click="DownloadButton_OnClick" Width="630" Content="下载"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource BorderRegion}">
+                    <StackPanel>
+                        <TextBlock FontWeight="ExtraBlack" Text="希沃小工具"></TextBlock>
+                        <Border Style="{StaticResource BorderRegion}">
+                            <StackPanel>
+                                <TextBlock FontWeight="ExtraBlack" Text="随机点名"></TextBlock>
+                                <TextBlock FontWeight="Medium" Text="在设置-扩展-设置名单-设置名单后即可随机点名。"></TextBlock>
+                                <Button Content="开始点名"></Button>
+                            </StackPanel>
+                        </Border>
+                        <Border Style="{StaticResource BorderRegion}">
+                            <StackPanel>
+                                <TextBlock FontWeight="ExtraBlack" Text="计时器"></TextBlock>
+                                <TextBlock FontWeight="Medium" Text="设置计时，开始计时。"></TextBlock>
+                                <Button Content="开始计时"></Button>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Border>
                 <TextBlock FontWeight="UltraBlack" Text="用户扩展" FontSize="20"></TextBlock>
                 <TextBlock FontWeight="Bold" Text="Coming S∞n" FontSize="20"></TextBlock>
             </StackPanel>

@@ -23,14 +23,14 @@
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="ElectronClassSchedule"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="一款电子课程表软件。"></TextBlock>
-                        <CheckBox x:Name="Ecs" Content="还没做呢" IsEnabled="False"/>
+                        <CheckBox x:Name="Ecs" Content="确认下载"/>
                     </StackPanel>
                 </Border>
                 <Border Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="Class-Widgets"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="一款全新课表软件。"></TextBlock>
-                        <CheckBox x:Name="Cw" Content="还没做呢" IsEnabled="False"/>
+                        <CheckBox x:Name="Cw" Content="确认下载"/>
                     </StackPanel>
                 </Border>
                 <TextBlock FontWeight="UltraBlack" Text="画板类" FontSize="20"></TextBlock>
@@ -52,7 +52,7 @@
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="InkCanvasForClass"></TextBlock>
                         <TextBlock TextWrapping="WrapWithOverflow" FontWeight="Medium" Text="InkCanvasForClass 是基于ChangSakura的 Ink Canvas Artistry项目二次开发而来。该项目着重于优化原项目的 UI 设计，使其更便于课堂使用，同时也在积极开发新功能，修理原项目的不合理之处。"></TextBlock>
-                        <CheckBox x:Name="Icc" Content="还没做呢" IsEnabled="False"/>
+                        <CheckBox x:Name="Icc" Content="留档保存" IsEnabled="False"/>
                     </StackPanel>
                 </Border>
                 <TextBlock FontWeight="UltraBlack" Text="桌面小工具和看板类" FontSize="20"></TextBlock>
@@ -65,7 +65,9 @@
                 </Border>
             </StackPanel>
         </ScrollViewer>
-            <Button Margin="0,0,0,30" VerticalAlignment="Bottom" HorizontalAlignment="Center" hc:BorderElement.CornerRadius="15" Style="{StaticResource ButtonPrimary}" Width="200" Content="开始下载" Click="ButtonBase_OnClick"/>
+            <StackPanel Margin="0,0,0,30" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                <Button hc:BorderElement.CornerRadius="15" Style="{StaticResource ButtonPrimary}" Width="200" Content="开始下载" Click="ButtonBase_OnClick"/> 
+            </StackPanel>
     </Grid>
     </Grid>
 </Page>
