@@ -8,8 +8,8 @@ public partial class SettingsPage : Page
 {
     public static class Settings
     {
-        public static int Process { get; set; }
-        public static string Dizhi { get; set; }
+        public static int Process = 64;
+        public static string? Path { get; set; }
     }
     public SettingsPage()
     {
@@ -18,13 +18,12 @@ public partial class SettingsPage : Page
 
     private void ProcessSlider_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
     {
-        var temp = Convert.ToInt32(ProcessSlider.Value) * 8;
-        Settings.Process = temp;
-        Console.WriteLine(temp);
+        Settings.Process = (int)ProcessSlider.Value;
+        Console.WriteLine((int)ProcessSlider.Value);
     }
 
-    private void DizhiTextBox_OnTextChanged(object sender, TextChangedEventArgs e)
+    private void PathTextBox_OnTextChanged(object sender, TextChangedEventArgs e)
     {
-        Settings.Dizhi = DizhiTextBox.Text;
+        Settings.Path = PathTextBox.Text;
     }
 }

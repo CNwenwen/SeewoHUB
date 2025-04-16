@@ -7,7 +7,7 @@
         xmlns:hc="https://handyorg.github.io/handycontrol"
         mc:Ignorable="d"
         ResizeMode="CanMinimize"
-        Title="Seewo Hub 1.0" Height="470" Width="800">
+        Title="Seewo Hub 1.1" Height="470" Width="800">
     <Grid>
         <TabControl>
             <TabItem Header="下载">
@@ -18,9 +18,6 @@
             </TabItem>
             <TabItem Header="设置">
                 <Frame Source="Pages/SettingsPage.xaml"></Frame>
-            </TabItem>
-            <TabItem Header="Github存储库">
-                <Frame Source="Pages/Update.xaml"></Frame>
             </TabItem>
         </TabControl>
         <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">

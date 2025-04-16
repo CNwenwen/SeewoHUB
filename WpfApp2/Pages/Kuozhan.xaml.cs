@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using HandyControl.Controls;
 using StarLight_Core.Downloader;
+using StarLight_Core.Models.Downloader;
 using StarLight_Core.Utilities;
 
 namespace WpfApp2.Pages;
@@ -18,6 +19,9 @@ public partial class Kuozhan : Page
     {
         var source = new CancellationTokenSource();
         var token = source.Token;
+        DownloaderConfig.MaxThreads = SettingsPage.Settings.Process;
+        DownloaderConfig.VerificationFile = true;
+        DownloaderConfig.UserAgent = "SeewoHUB/1.1.0";
         MultiThreadedFileDownloader downloader = new MultiThreadedFileDownloader((x =>
                 Console.WriteLine(x / 8 / 1024 + "MB/s")
             ),token);
@@ -32,6 +36,7 @@ public partial class Kuozhan : Page
             //提示错误信息
             Console.WriteLine(exception);
             Growl.Error("下载失败。错误：" + exception);
+            return;
         }
         //提示下载完成
         Growl.Success("自定义下载成功！");

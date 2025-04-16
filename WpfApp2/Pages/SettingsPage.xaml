@@ -10,43 +10,42 @@
         <ScrollViewer>
             <StackPanel>
                 <TextBlock FontWeight="UltraBlack" Text="下载" FontSize="20"></TextBlock>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="下载线程数"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="设置线程数量。一般来说，线程越多，速度越快。但不推荐设置为128个以上，可能会导致严重卡顿。"></TextBlock>
-                        <Slider  IsEnabled="False" ValueChanged="ProcessSlider_OnValueChanged" x:Name="ProcessSlider" Value="16" Maximum="32" Minimum="1"></Slider>
-                        <TextBlock x:Name="PreviewSliderTextBlock" FontWeight="Light"></TextBlock>
+                        <Slider ValueChanged="ProcessSlider_OnValueChanged" x:Name="ProcessSlider" Value="64" Maximum="256" Minimum="1"></Slider>
                     </StackPanel>
                 </Border>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="下载源"></TextBlock>
-                        <TextBlock FontWeight="Medium" Text="选定一个下载镜像源，防止下载失败。"></TextBlock>
+                        <TextBlock FontWeight="Medium" Text="尽量防止因网络问题导致的下载失败。此设置对Classisland下载无效。"></TextBlock>
                         <ComboBox  IsEnabled="False"/>
                     </StackPanel>
                 </Border>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="下载地址"></TextBlock>
-                        <TextBlock FontWeight="Medium" Text="选定一个下载地址。默认为当前程序运行地址。例如：D:\Download。"></TextBlock>
-                        <TextBox TextChanged="DizhiTextBox_OnTextChanged" x:Name="DizhiTextBox"/>
+                        <TextBlock FontWeight="Medium" Text="默认为当前程序运行地址。例如：D:\Download。"></TextBlock>
+                        <TextBox TextChanged="PathTextBox_OnTextChanged" x:Name="PathTextBox"/>
                     </StackPanel>
                 </Border>
                 <TextBlock FontWeight="UltraBlack" Text="投稿与侵权处理" FontSize="20"></TextBlock>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="投稿"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="请联系1218858474@qq.com。"></TextBlock>
                     </StackPanel>
                 </Border>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="侵权处理"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="请联系1218858474@qq.com。"></TextBlock>
                     </StackPanel>
                 </Border>
                 <TextBlock FontWeight="UltraBlack" Text="关于" FontSize="20"></TextBlock>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="UI库和使用的开源Nuget包"></TextBlock>
                         <Image Source="https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Cover.png"></Image>
@@ -54,25 +53,25 @@
                         <TextBlock FontWeight="Medium" Text="使用了StarLight_Core作为多线程下载器（其实是一个MineCraft启动器啦）。"></TextBlock>
                     </StackPanel>
                 </Border>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="许可证"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="为了对开源社区的支持，我们使用MIT协议开源。欢迎各位Fork仓库和制作更好的版本！"></TextBlock>
                     </StackPanel>
                 </Border>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="制作者"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="by hyjthfhtself and Shadow-Team with love."></TextBlock>
                     </StackPanel>
                 </Border>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="投诉与反馈"></TextBlock>
                         <TextBlock FontWeight="Medium" Text="请联系1218858474@qq.com。"></TextBlock>
                     </StackPanel>
                 </Border>
-                <Border Style="{StaticResource BorderRegion}">
+                <Border Margin="0,8,0,0" Style="{StaticResource BorderRegion}">
                     <StackPanel>
                         <TextBlock FontWeight="ExtraBlack" Text="特别鸣谢"></TextBlock>
                         <TextBlock TextWrapping="WrapWithOverflow" FontWeight="Medium" Text="https://github.com/kriastans/Awesome-Iwb和https://github.com/Jursin/Awesome-Class-Softwares提供了软件源的支持。由https://github.com/SectionIstool/SectionIstool提供灵感支持。"></TextBlock>

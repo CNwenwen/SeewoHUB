@@ -13,9 +13,8 @@
 
     <ItemGroup>
       <PackageReference Include="HandyControl" Version="3.5.1" />
-      <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2792.45" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-      <PackageReference Include="StarLight_Core" Version="2.0.2-preview6" />
+      <PackageReference Include="StarLight_Core" Version="2.0.4-Preview6" />
     </ItemGroup>
 
 </Project>
